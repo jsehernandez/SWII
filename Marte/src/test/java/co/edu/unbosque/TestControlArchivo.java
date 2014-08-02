@@ -7,6 +7,7 @@
 package co.edu.unbosque;
 
 import co.edu.unbosque.marte.ControladorArchivo;
+import java.io.FileNotFoundException;
 import org.testng.annotations.Test;
 
 /**
@@ -16,8 +17,7 @@ import org.testng.annotations.Test;
 public class TestControlArchivo {
     
     @Test
-    public void elArchivoExiste(){
-        ControladorArchivo c=new ControladorArchivo("d:/juego.txt");
-        
+    public void elArchivoExiste() throws FileNotFoundException{
+        ControladorArchivo c=new ControladorArchivo("d:/juego.txt");        
     }
 }
